@@ -12,7 +12,7 @@ const Wrapper = styled.div`
       /* margin: 1em 0 1em 3em; */
       .btn-types {
         margin: 1em 1em 1em 1em;
-        background-color: #f1f1f1;
+        background-color: #f1f1f159;
         border: 1px solid #ddd;
         border-radius: 0.3em;
         /* padding: 0.5em; */
@@ -21,9 +21,13 @@ const Wrapper = styled.div`
         .types-logo {
           font-size: 1.8em;
           margin: 0.5em;
+          background-color: transparent;
           :hover {
             color: var(--color-3);
           }
+        }
+        .active {
+          color: var(--color-3);
         }
       }
       .images {
@@ -76,6 +80,7 @@ const Wrapper = styled.div`
           width: min(95%, 500px);
           margin: 1em 0;
           border-radius: 0.3em;
+          box-shadow: var(--box-shadow-1);
           padding: 0.5em;
           border: 2px solid var(--color-1);
         }
@@ -93,11 +98,17 @@ const Wrapper = styled.div`
       font-size: 1em;
       border: 2px solid var(--color-1);
       background-color: var(--color-1);
+      box-shadow: var(--box-shadow-1);
       color: var(--color-2);
       :hover {
         background-color: var(--color-2);
         color: var(--color-1);
+        /* font-weight: 600; */
       }
+    }
+    .post-now {
+      border: 2px solid var(--color-3);
+      background-color: var(--color-3);
     }
   }
   @media screen and (max-width: 700px) {

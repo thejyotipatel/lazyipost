@@ -8,7 +8,7 @@ const Home = () => {
       <div className='sections'>
         <div className='image-section'>
           <div className='btn-types'>
-            <button className='btn types-logo'>
+            <button className='btn types-logo active'>
               <BsFillSquareFill />
             </button>
             <button className='btn types-logo'>

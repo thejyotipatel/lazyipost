@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     margin: 0.5em;
 
     a {
-      margin: 1em;
+      margin: 1em 0.8em;
       font-weight: 600;
       font-size: 1.2em;
 
@@ -34,6 +34,8 @@ const Wrapper = styled.div`
 
     .menu {
       display: block;
+      z-index: 3;
+      background-color: #ddd;
       font-size: 2em;
       font-weight: 800;
       margin: 0.5em 0 0.5em 0.5em;
