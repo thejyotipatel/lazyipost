@@ -5,16 +5,18 @@ import styled from 'styled-components'
 
 function App() {
   return (
-    <Wrapper className='App'>
-      <div className='headers'>
-        <Logo />
-        <BigHeader />
-      </div>
+    <>
+      {/* <Wrapper className='App'> */}
+      {/* <div className='headers'> */}
+      {/* <Logo />
+        <BigHeader /> */}
+      {/* </div> */}
       {/* <SmallHeader /> */}
       {/* <Home /> */}
       <Landing />
       {/* <FooterSection /> */}
-    </Wrapper>
+      {/* </Wrapper> */}
+    </>
   )
 }
 
