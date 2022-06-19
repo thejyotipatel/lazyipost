@@ -25,23 +25,24 @@ const Wrapper = styled.div`
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      border-radius: .3em;
+      border-radius: 0.3em;
       /* margin: 2em 2em; */
- a {
-      margin: .8em;
-      font-weight: 600;
-      font-size: 1.5em;
+      a {
+        margin: 0.8em;
+        font-weight: 600;
+        font-size: 1.5em;
 
-      :hover {
-        text-decoration: underline;
-      }
+        :hover {
+          text-decoration: underline;
+        }
 
-      :nth-child(3) {
-        color: var(--color-3);
+        :nth-child(3) {
+          color: var(--color-3);
+        }
       }
-    }
-    button {
-      margin-top: 2em;
+      button {
+        margin-top: 2em;
+      }
     }
   }
 `

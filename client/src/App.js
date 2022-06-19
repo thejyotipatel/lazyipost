@@ -1,6 +1,6 @@
 import { BigHeader, SmallHeader, Logo, FooterSection } from './components'
 import Home from './page/home'
-// import Landing from './page/landing'
+import Landing from './page/landing'
 import styled from 'styled-components'
 
 function App() {
@@ -10,10 +10,10 @@ function App() {
         <Logo />
         <BigHeader />
       </div>
-      <SmallHeader />
-      <Home />
-      {/* <Landing /> */}
-      <FooterSection />
+      {/* <SmallHeader /> */}
+      {/* <Home /> */}
+      <Landing />
+      {/* <FooterSection /> */}
     </Wrapper>
   )
 }
