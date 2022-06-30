@@ -12,8 +12,8 @@ function App() {
         <BigHeader /> */}
       {/* </div> */}
       {/* <SmallHeader /> */}
-      {/* <Home /> */}
-      <Landing />
+      <Home />
+      {/* <Landing /> */}
       {/* <FooterSection /> */}
       {/* </Wrapper> */}
     </>

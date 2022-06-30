@@ -1,10 +1,20 @@
 import { IoCopy } from 'react-icons/io'
+import { useState } from 'react'
 import { RiCheckboxMultipleBlankFill } from 'react-icons/ri'
 import { BsFillSquareFill } from 'react-icons/bs'
+
 import Wrapper from '../assets/wrapper/home'
+import { BigHeader, MobileMenu, SmallHeader, Logo } from '../components'
 const Home = () => {
+  const [closeMenu, setCloseMenu] = useState(false)
   return (
     <Wrapper>
+      <div className='headers'>
+        <Logo />
+        <BigHeader />
+        <MobileMenu closeMenu={closeMenu} setCloseMenu={setCloseMenu} />
+        {closeMenu && <SmallHeader />}
+      </div>
       <div className='sections'>
         <div className='image-section'>
           <div className='btn-types'>
