@@ -8,7 +8,7 @@ const Logo = () => {
   return <Wrapper>LazyIPost</Wrapper>
 }
 const Wrapper = styled.div`
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 500;
   margin: 1em 1em 1em 0;
 `

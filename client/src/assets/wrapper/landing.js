@@ -5,12 +5,9 @@ const Wrapper = styled.div`
   /* height: 80vh; */
   /* width: min(90%, 1200px); */
   /* margin-inline: auto; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
-  /* align-items: center; */
+
   /*  */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: min(90%, 1400px);
   margin-inline: auto;
   .headers {
@@ -50,21 +47,20 @@ const Wrapper = styled.div`
     font-size: 1.8em;
     font-weight: 500;
   }
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer {
     margin: auto auto 0 auto;
-    border: 2px solid hotpink;
-    display: flex;
-    align-items: center;
+    /* border: 2px solid hotpink; */
+    position: absolute;
+    bottom: 1em;
     width: inherit;
     p {
-      margin: 1em 1em 1em 0;
-    }
-    a {
-      /* margin: 1em; */
-      /* span { */
-      font-size: 2em;
-      /* font-weight: 800; */
-      /* } */
+      margin: 1.5em 0 0 0;
     }
   }
 `

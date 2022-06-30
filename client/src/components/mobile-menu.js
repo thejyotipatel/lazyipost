@@ -3,10 +3,11 @@ import {
   BsFillMenuButtonWideFill,
   BsGithub,
 } from 'react-icons/bs'
+// import { } from 'react-icons/fa'
 import { GoPrimitiveDot } from 'react-icons/go'
 import Wrapper from '../assets/wrapper/mobile-menu'
 
-const MobileMenu = () => {
+const MobileMenu = ({ setCloseMenu, closeMenu }) => {
   return (
     <Wrapper className='mobile-menu'>
       <a href=''>
@@ -19,8 +20,9 @@ const MobileMenu = () => {
           <BsFillHeartFill />
         </span>
       </a>
-      <button className='menu'>
+      <button className='menu' onClick={() => setCloseMenu(!closeMenu)}>
         {/* <button className='dots'> */}
+
         <span>
           <GoPrimitiveDot /> <GoPrimitiveDot /> <GoPrimitiveDot />
         </span>

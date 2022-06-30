@@ -21,12 +21,12 @@ const Wrapper = styled.div`
     .menu {
       display: block;
       z-index: 3;
-      border: 2px solid hotpink;
+      /* border: 2px solid hotpink; */
 
       /* margin: 0 0 0.5em 0.5em; */
-      /* border: none; */
+      border: none;
       outline: none;
-      /* margin: 0.5em; */
+      margin: 0.5em 0;
       cursor: pointer;
       background-color: transparent;
       color: var(--color-1);
@@ -40,7 +40,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  @media screen and (min-width: 832px) {
+  @media screen and (min-width: 560px) {
     display: none;
   }
 `

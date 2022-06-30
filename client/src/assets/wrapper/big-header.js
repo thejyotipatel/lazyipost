@@ -27,14 +27,15 @@ const Wrapper = styled.div`
   /* .login-btn {
     display: none;
   } */
-  @media screen and (max-width: 832px) {
+  @media screen and (max-width: 560px) {
     display: none;
     /* }
     .login-btn {
       display: none;
     } */
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 850px) {
+    justify-content: flex-end;
     .login-btn {
       display: none;
     }
