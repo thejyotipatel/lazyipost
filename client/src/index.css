@@ -1,14 +1,28 @@
 :root {
-  --color-1: #000;
-  --color-2: #fff;
-  --color-3: rgb(230, 101, 16);
-  --font-family: 'Roboto', sans-serif;
-  --transition: all 0.2s linear;
+  --clr-accent-200: #fff;
 
-  --box-shadow-1: 0 8px 16px #00000029;
-  --box-shadow-2: 0 4px 12px #00000014, 0 0 1px #0100001a;
-  --box-shadow-3: 0 1px 1px #0000000a;
-  --box-shadow-4: 0 2px 1px #0000000a;
+  --clr-primary-300: rgb(230, 101, 16);
+
+  --clr-neutral-100: #000;
+
+  --ff-primery: 'Roboto', sans-serif;
+
+  --ff-body: var(--ff-primery);
+  --ff-heading: var(--ff-primery);
+
+  --fw-reguler: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 1rem;
+  --fs-body: var(--fs-300);
+
+  --ts-400: all 0.2s linear;
+
+  --bxs-100: 0 8px 16px #00000029;
+  --bxs-200: 0 4px 12px #00000014, 0 0 1px #0100001a;
+  --bxs-300: 0 1px 1px #0000000a;
+  --bxs-400: 0 2px 1px #0000000a;
 }
 *,
 ::after,
@@ -17,31 +31,101 @@
   padding: 0;
   box-sizing: border-box;
 }
-* {
-  box-sizing: border-box;
-  /* outline: 3px solid limegreen !important; */
-  background: rgba(114, 196, 114, 0.178) !important;
-}
+/* * { */
+/* box-sizing: border-box; */
+/* outline: 3px solid limegreen !important; */
+/* background: rgba(114, 196, 114, 0.178) !important; */
+/* } */
 body {
-  font-family: var(--font-family);
+  font-family: var(--ff-primery);
   line-height: 1.5;
   /* font-size: var(--step-0); */
   /* background-color: var(--bg-color-2); */
   /* color: var(--text-color-2); */
 }
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transition-100s and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-100-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* styling */
 
 .btn {
   margin: 0;
   /* padding: 0; */
   outline: none;
   border: none;
-  transition: var(--transition);
+  transition-100: var(--transition-100);
   cursor: pointer;
 }
 a {
-  color: var(--color-1);
+  color: var(--clr--100);
   text-decoration: none;
-  transition: var(--transition);
+  transition-100: var(--transition-100);
   text-transform: capitalize;
 }
 .login-btn {
@@ -53,15 +137,15 @@ a {
   font-size: 1.1em;
   border-radius: 0.3em;
 
-  background-color: var(--color-1);
-  color: var(--color-2);
+  background-color: var(--clr--100);
+  color: var(--clr--200);
   /* border-radius: 40px; */
-  border: 2px solid var(--color-1);
-  transition: var(--transition);
-  box-shadow: var(--box-shadow-3);
+  border: 2px solid var(--clr--100);
+  transition-100: var(--transition-100);
+  bxs: 00var (--bxs-300);
 }
 .login-btn:hover {
-  background-color: var(--color-2);
-  color: var(--color-1);
-  border: 2px solid var(--color-1);
+  background-color: var(--clr--200);
+  color: var(--clr--100);
+  border: 2px solid var(--clr--100);
 }

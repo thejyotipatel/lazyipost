@@ -9,6 +9,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     .image-section {
       /* margin: 1em 0 1em 3em; */
+      margin: 1em;
       .btn-types {
         margin: 1em 1em 1em 1em;
         background-color: #f1f1f159;
@@ -56,6 +57,7 @@ const Wrapper = styled.div`
           padding: 0.5em;
           border: 2px solid var(--color-1);
           border-radius: 0.3em;
+          resize: vertical;
         }
       }
       .reference {
@@ -73,12 +75,14 @@ const Wrapper = styled.div`
           }
         }
         .reference-desc {
-          width: min(95%, 500px);
-          margin: 1em 0;
+          width: min(100%, 700px);
+          /* margin: 1em 0; */
+          /* width: 100%; */
           border-radius: 0.3em;
           /* box-shadow: var(--box-shadow-3); */
           padding: 0.5em;
           border: 2px solid var(--color-1);
+          text-align: justify;
         }
       }
     }
@@ -119,6 +123,9 @@ const Wrapper = styled.div`
         width: 100%;
         justify-content: center;
         display: flex;
+      }
+      .caption-section {
+        margin-left: 0;
       }
     }
   }

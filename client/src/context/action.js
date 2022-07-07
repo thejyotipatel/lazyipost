@@ -1,2 +1,3 @@
-export const Display_Alert = 'Show_Alert'
-export const Clear_Alert = 'Clear_Alert'
+export const DISPLAY_ALERT = 'DISPLAY_ALERT'
+export const CLEAR_ALERT = 'CLEAR_ALERT'
+export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR'

@@ -6,8 +6,11 @@ import {
 // import { } from 'react-icons/fa'
 import { GoPrimitiveDot } from 'react-icons/go'
 import Wrapper from '../assets/wrapper/mobile-menu'
+import { useAppContext } from '../context/appContext'
 
-const MobileMenu = ({ setCloseMenu, closeMenu }) => {
+const MobileMenu = () => {
+  const { toggleSidebar } = useAppContext()
+
   return (
     <Wrapper className='mobile-menu'>
       <a href=''>
@@ -20,7 +23,7 @@ const MobileMenu = ({ setCloseMenu, closeMenu }) => {
           <BsFillHeartFill />
         </span>
       </a>
-      <button className='menu' onClick={() => setCloseMenu(!closeMenu)}>
+      <button className='menu' type='button' onClick={toggleSidebar}>
         {/* <button className='dots'> */}
 
         <span>

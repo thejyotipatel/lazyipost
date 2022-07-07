@@ -7,10 +7,16 @@ import {
 } from 'react-icons/bs'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { BiChevronDown } from 'react-icons/bi'
+import { Logo } from '.'
 // import MobileMenu from './mobile-menu'
+// import { Logo } from './index'
+import { useAppContext } from '../context/appContext'
+
 const BigHeader = () => {
+  const { toggleSidebar } = useAppContext()
   return (
     <Wrapper>
+      <Logo />
       <header>
         {link.map((item) => {
           const { id, text, link } = item

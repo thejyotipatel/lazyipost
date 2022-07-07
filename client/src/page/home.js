@@ -5,15 +5,19 @@ import { BsFillSquareFill } from 'react-icons/bs'
 
 import Wrapper from '../assets/wrapper/home'
 import { BigHeader, MobileMenu, SmallHeader, Logo } from '../components'
+import { useAppContext } from '../context/appContext'
+
 const Home = () => {
-  const [closeMenu, setCloseMenu] = useState(false)
+  // const [closeMenu, setCloseMenu] = useState(false)
+  const { showSidebar } = useAppContext()
+
   return (
     <Wrapper>
       <div className='headers'>
         <Logo />
         <BigHeader />
-        <MobileMenu closeMenu={closeMenu} setCloseMenu={setCloseMenu} />
-        {closeMenu && <SmallHeader />}
+        <MobileMenu />
+        {showSidebar && <SmallHeader />}
       </div>
       <div className='sections'>
         <div className='image-section'>
@@ -36,7 +40,7 @@ const Home = () => {
               name='capton'
               id='caption'
               placeholder="write your post caption and #hastage's"
-              cols='30'
+              // cols='30'
               rows='10'
               // maxWidth={500}
             ></textarea>

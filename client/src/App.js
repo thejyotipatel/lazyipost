@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { BigHeader, SmallHeader, Logo, FooterSection } from './components'
 import Home from './page/home'
 import Landing from './page/landing'
@@ -5,18 +6,11 @@ import styled from 'styled-components'
 
 function App() {
   return (
-    <>
-      {/* <Wrapper className='App'> */}
-      {/* <div className='headers'> */}
-      {/* <Logo />
-        <BigHeader /> */}
-      {/* </div> */}
-      {/* <SmallHeader /> */}
-      <Home />
-      {/* <Landing /> */}
-      {/* <FooterSection /> */}
-      {/* </Wrapper> */}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Landing />}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
