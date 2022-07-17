@@ -7,13 +7,17 @@ import img from '../assets/images/logo.svg'
 const Logo = () => {
   return (
     <Wrapper>
-      <img src={img} alt="InstPost" />
+      <img src={img} alt='InstPost' />
     </Wrapper>
-  ) 
-}   
+  )
+}
 const Wrapper = styled.a`
-  font-size: 1.8em; 
-  font-weight: 500;
-  margin: 1em 1em 1em 0;
+  /* font-weight: 500; */
+  /* font-size: 8em; */
+  /* margin: 1em 1em 1em 0; */
+  width: 200px;
+  img {
+    display: block;
+  }
 `
 export { Logo, BigHeader, SmallHeader, FooterSection, MobileMenu }

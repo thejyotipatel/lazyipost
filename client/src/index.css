@@ -1,5 +1,6 @@
 :root {
   --clr-accent-200: #fff;
+  --clr-accent-300: rgba(160, 156, 156, 0.13);
 
   --clr-primary-300: #e66510;
 
@@ -23,13 +24,14 @@
   --bxs-200: 0 4px 12px #00000014, 0 0 1px #0100001a;
   --bxs-300: 0 1px 1px #0000000a;
   --bxs-400: 0 2px 1px #0000000a;
+
+  --d-border: 2px solid hotpink;
 }
 body {
   font-family: var(--ff-body);
   line-height: 1.5;
-  /* font-size: var(--step-0); */
-  /* background-color: var(--bg-color-2); */
-  /* color: var(--text-color-2); */
+  font-size: var(--fs-body);
+  color: var(--clr-neutral-100);
 }
 /* https://piccalil.li/blog/a-modern-css-reset */
 
@@ -111,6 +113,7 @@ select {
 a {
   text-decoration: none;
   text-transform: capitalize;
+  cursor: pointer;
 }
 .login-btn {
   margin: 0.5em;

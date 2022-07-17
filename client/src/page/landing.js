@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import Wrapper from '../assets/wrapper/landing'
-import { BiCopyright } from 'react-icons/bi'
+import { BiCopyright, BiMenu, BiMenuAltLeft } from 'react-icons/bi'
 import { Logo, BigHeader, MobileMenu, SmallHeader } from '../components'
 const Landing = () => {
   return (
     <Wrapper>
       <header className='primery-landingPage-header'>
         <Logo />
+        <button className='button mobile-menu'>
+          <BiMenuAltLeft />
+        </button>
         <nav className='primery-list'>
           <ul role='list'>
             <li>
