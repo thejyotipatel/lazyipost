@@ -1,7 +1,7 @@
 :root {
   --clr-accent-200: #fff;
 
-  --clr-primary-300: rgb(230, 101, 16);
+  --clr-primary-300: #e66510;
 
   --clr-neutral-100: #000;
 
@@ -31,13 +31,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* * { */
-/* box-sizing: border-box; */
-/* outline: 3px solid limegreen !important; */
-/* background: rgba(114, 196, 114, 0.178) !important; */
-/* } */
+
 body {
-  font-family: var(--ff-primery);
+  font-family: var(--ff-body);
   line-height: 1.5;
   /* font-size: var(--step-0); */
   /* background-color: var(--bg-color-2); */
@@ -119,13 +115,13 @@ select {
   /* padding: 0; */
   outline: none;
   border: none;
-  transition-100: var(--transition-100);
+  transition: var(--transition-100);
   cursor: pointer;
 }
 a {
   color: var(--clr--100);
   text-decoration: none;
-  transition-100: var(--transition-100);
+  transition: var(--transition-100);
   text-transform: capitalize;
 }
 .login-btn {
@@ -141,8 +137,8 @@ a {
   color: var(--clr--200);
   /* border-radius: 40px; */
   border: 2px solid var(--clr--100);
-  transition-100: var(--transition-100);
-  bxs: 00var (--bxs-300);
+  transition: var(--ts-400);
+  box-shadow: var(--bxs-300);
 }
 .login-btn:hover {
   background-color: var(--clr--200);
