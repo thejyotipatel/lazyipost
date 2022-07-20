@@ -12,17 +12,24 @@ const SmallHeader = () => {
         </span>
       </button> */}
       <div className='menu-links'>
-        {link.map((item) => {
-          const { id, text, link } = item
-          return (
-            <a href={link} key={id} className='link'>
-              {text}
+        <ul role='list'>
+          <li>
+            <a href='#' className='primery-link'>
+              Github
             </a>
-          )
-        })}
-        <button type='button' className='btn login-btn'>
-          Login with Instagram
-        </button>
+          </li>
+          <li>
+            <a href='#' className='primery-link'>
+              about
+            </a>
+          </li>
+          <li>
+            <a href='#' className='primery-link byemecoffee'>
+              Bye me Coffee
+            </a>
+          </li>
+        </ul>
+        <button className='button login-btn'>Login with Instagram</button>
       </div>
     </Wrapper>
   )

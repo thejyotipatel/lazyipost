@@ -13,14 +13,7 @@ const Landing = () => {
       <header className='primery-landingPage-header'>
         <Logo />
         <button className='button mobile-menu' onClick={toggleSidebar}>
-          {!showSidebar && (
-            <span>
-              <VscClose />
-            </span>
-          )}
-          <span>
-            <HiOutlineMenuAlt3 />
-          </span>
+          <span>{showSidebar ? <VscClose /> : <HiOutlineMenuAlt3 />}</span>
         </button>
         {showSidebar && <SmallHeader />}
         <nav className='primery-list'>
