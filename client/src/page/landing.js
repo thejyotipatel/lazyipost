@@ -1,15 +1,28 @@
 import { useState } from 'react'
 import Wrapper from '../assets/wrapper/landing'
-import { BiCopyright, BiMenu, BiMenuAltLeft } from 'react-icons/bi'
+import { BiCopyright, BiMenuAltLeft } from 'react-icons/bi'
+import { HiOutlineMenuAlt3 } from 'react-icons/hi'
+import { VscClose } from 'react-icons/vsc'
 import { Logo, BigHeader, MobileMenu, SmallHeader } from '../components'
+import { useAppContext } from '../context/appContext'
 const Landing = () => {
+  const { showSidebar, toggleSidebar } = useAppContext()
+
   return (
     <Wrapper>
       <header className='primery-landingPage-header'>
         <Logo />
-        <button className='button mobile-menu'>
-          <BiMenuAltLeft />
+        <button className='button mobile-menu' onClick={toggleSidebar}>
+          {!showSidebar && (
+            <span>
+              <VscClose />
+            </span>
+          )}
+          <span>
+            <HiOutlineMenuAlt3 />
+          </span>
         </button>
+        {showSidebar && <SmallHeader />}
         <nav className='primery-list'>
           <ul role='list'>
             <li>

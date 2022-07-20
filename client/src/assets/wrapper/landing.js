@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   width: min(90%, 1400px);
   margin-inline: auto;
   header {
+    border: var(--d-border);
     display: flex;
     /* grid-template-columns: 20% 60%; */
     justify-content: space-between;
@@ -51,12 +52,13 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         margin: 0.5em 0;
-        width: 50px;
-        height: 50px;
-        border-radius: 0.05em;
+        width: 40px;
+        height: 40px;
+        /* border-radius: 0.05em; */
         color: var(--clr-neutral-100);
-        background-color: var(--clr-accent-300);
-        font-size: 2.8em;
+        background-color: var(--clr-accent-100);
+        font-size: 2.5em;
+        z-index: 999;
       }
     }
   }
