@@ -5,32 +5,47 @@ import {
   BsFillMenuButtonWideFill,
   BsGithub,
 } from 'react-icons/bs'
-import { GoPrimitiveDot } from 'react-icons/go'
-import { BiChevronDown } from 'react-icons/bi'
-import { Logo } from '.'
-// import MobileMenu from './mobile-menu'
-// import { Logo } from './index'
+import { BiChevronDown, BiUserCircle } from 'react-icons/bi'
+import { HiOutlineMenuAlt3 } from 'react-icons/hi'
+import { VscClose } from 'react-icons/vsc'
+
+import { Logo, SmallHeader } from '.'
 import { useAppContext } from '../context/appContext'
 
 const BigHeader = () => {
-  const { toggleSidebar } = useAppContext()
+  const { toggleSidebar, showSidebar } = useAppContext()
   return (
     <Wrapper>
       <Logo />
-      <header>
-        {link.map((item) => {
-          const { id, text, link } = item
-          return (
-            <a href={link} key={id} className='link'>
-              {text}
-            </a>
-          )
-        })}
-      </header>
-      {/* <MobileMenu /> */}
-      <button type='button' className='btn login-btn'>
-        Login with Instagram
+      <button className='button mobile-menu' onClick={toggleSidebar}>
+        <span>{showSidebar ? <VscClose /> : <HiOutlineMenuAlt3 />}</span>
       </button>
+      {showSidebar && <SmallHeader />}
+      <nav className='primery-list'>
+         <ul role='list'>
+          <li>
+            <a href='#' className='primery-link'>
+              Github
+            </a>
+          </li>
+          <li>
+            <a href='#' className='primery-link'>
+              about
+            </a>
+          </li>
+          <li>
+            <a href='#' className='primery-link byemecoffee'>
+              Bye me Coffee
+            </a>
+          </li>
+        </ul>
+        <button className='button profile-btn'>
+          <span>
+            <BiUserCircle />
+            <BiChevronDown />
+          </span>
+        </button>
+      </nav>
     </Wrapper>
   )
 }

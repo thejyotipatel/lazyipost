@@ -1,23 +1,34 @@
 import { Logo } from '../components/index'
 import Wrapper from '../assets/wrapper/footer'
-import link from '../components/links'
+import { BiCopyright } from 'react-icons/bi'
+
 const FooterSection = () => {
   return (
     <Wrapper>
-      <div className='links'>
-        <Logo />
-        <div className='footer-links'>
-          {link.map((item) => {
-            const { id, text, link } = item
-            return (
-              <a href={link} key={id} className='link'>
-                {text}
-              </a>
-            )
-          })}
+      <footer>
+        <div className='container'>
+          <p>
+            <span>
+              <BiCopyright />
+            </span>
+            Copyright 2022.
+          </p>
+          <nav className='secandery-list'>
+            <ul role='list'>
+              <li>
+                <a href='' className='secandery-link'>
+                  privacy policy
+                </a>
+              </li>
+              <li>
+                <a href='' className='secandery-link'>
+                  Terms of Use
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <p className='copyright'>;:copy All right reserve to IPost</p>
+      </footer>
     </Wrapper>
   )
 }

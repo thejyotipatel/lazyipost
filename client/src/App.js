@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { BigHeader, SmallHeader, Logo, FooterSection } from './components'
-import Home from './page/home'
+import Home from './page/dashbord/home'
 import Landing from './page/landing'
 import styled from 'styled-components'
 
