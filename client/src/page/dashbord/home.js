@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <Wrapper>
-      <BigHeader />
+      <BigHeader loginBtn={'login'} />
       <main>
         <div className='container'>
           <div className='col'>

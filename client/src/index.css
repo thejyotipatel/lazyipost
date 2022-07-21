@@ -20,10 +20,14 @@
   --fs-300: 1rem;
   --fs-400: 1.5rem;
   --fs-500: 1.8rem;
+  --fs-600: 2rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3rem;
 
   --fs-body: var(--fs-300);
 
   --ts-400: all 0.2s linear;
+  --btn-radius: 0.3rem;
 
   --bxs-100: 0 8px 16px #00000029;
   --bxs-200: 0 4px 12px #00000014, 0 0 1px #0100001a;
@@ -120,13 +124,14 @@ a {
   text-transform: capitalize;
   cursor: pointer;
 }
-.login-btn {
+.login-btn,
+.logout-btn {
   margin: 0.5em;
   padding: 01em 2em;
   font-weight: var(--fw-bold);
   width: fit-content;
   font-size: var(--fs-300);
-  border-radius: 0.3em;
+  border-radius: var(--btn-radius);
 
   background-color: var(--clr-primary-300);
   color: var(--clr-accent-200);
@@ -135,10 +140,21 @@ a {
   transition: var(--ts-400);
   box-shadow: var(--bxs-300);
 }
-.login-btn:hover {
+.login-btn:hover,
+.login-btn:focus-visible,
+.logout-btn:hover,
+.logout-btn:focus-visible {
   background-color: var(--clr-accent-200);
   color: var(--clr-neutral-100);
   border: 2px solid var(--clr-neutral-100);
+}
+
+.profile-btn {
+  background-color: transparent;
+}
+.profile-btn span {
+  display: flex;
+  font-size: var(--fs-700);
 }
 
 .byemecoffee {
@@ -146,6 +162,7 @@ a {
   font-weight: var(--fw-bold);
   transition: var(--ts-400);
 }
-.byemecoffee:hover {
+.byemecoffee:hover,
+.byemecoffee:focus-visible {
   text-decoration: underline;
 }

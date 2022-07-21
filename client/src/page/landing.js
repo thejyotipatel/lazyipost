@@ -9,33 +9,7 @@ const Landing = () => {
 
   return (
     <Wrapper>
-      <header className='primery-landingPage-header'>
-        <Logo />
-        <button className='button mobile-menu' onClick={toggleSidebar}>
-          <span>{showSidebar ? <VscClose /> : <HiOutlineMenuAlt3 />}</span>
-        </button>
-        {showSidebar && <SmallHeader />}
-        <nav className='primery-list'>
-          <ul role='list'>
-            <li>
-              <a href='#' className='primery-link'>
-                Github
-              </a>
-            </li>
-            <li>
-              <a href='#' className='primery-link'>
-                about
-              </a>
-            </li>
-            <li>
-              <a href='#' className='primery-link byemecoffee'>
-                Bye me Coffee
-              </a>
-            </li>
-          </ul>
-          <button className='button login-btn'>Login with Instagram</button>
-        </nav>
-      </header>
+      <BigHeader />
       <main>
         <div className='container'>
           <div className='col'>

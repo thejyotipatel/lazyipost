@@ -1,6 +1,6 @@
 import Wrapper from '../assets/wrapper/small-header'
 
-const SmallHeader = () => {
+const SmallHeader = ({ loginBtn }) => {
   return (
     <Wrapper>
       <div className='menu-links'>
@@ -21,7 +21,11 @@ const SmallHeader = () => {
             </a>
           </li>
         </ul>
-        <button className='button login-btn'>Login with Instagram</button>
+        {!loginBtn ? (
+          <button className='button login-btn'>Login with Instagram</button>
+        ) : (
+          <button className='button logout-btn'>logOut</button>
+        )}
       </div>
     </Wrapper>
   )

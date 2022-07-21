@@ -27,33 +27,44 @@ const Wrapper = styled.header`
       }
     }
   }
-
+  .profile-btn {
+    /* color: red; */
+  }
   @media screen and (max-width: 832px) {
-    header {
-      nav {
-        .login-btn {
-          display: none;
-        }
+    nav {
+      .login-btn {
+        /* color: red; */
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 612px) {
+    nav {
+      .login-btn,
+      .profile-btn {
+        display: none;
       }
     }
   }
   @media screen and (max-width: 562px) {
-    header {
-      nav {
-        display: none;
-      }
-      .mobile-menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0.5em 0;
-        width: 40px;
-        height: 40px;
-        color: var(--clr-neutral-100);
-        background-color: var(--clr-accent-100);
-        font-size: 2.5em;
-        z-index: 999;
-      }
+    nav {
+      display: none;
+    }
+    .mobile-menu {
+      position: fixed;
+      right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5em 0;
+      padding: 0.2rem;
+      border-radius: var(--btn-radius);
+      width: 40px;
+      height: 40px;
+      color: var(--clr-neutral-100);
+      background-color: var(--clr-accent-300);
+      font-size: 2.5em;
+      z-index: 999;
     }
   }
 `
