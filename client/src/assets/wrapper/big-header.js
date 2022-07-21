@@ -51,7 +51,7 @@ const Wrapper = styled.header`
       display: none;
     }
     .mobile-menu {
-      position: fixed;
+      position: fixed;  
       right: 1rem;
       display: flex;
       align-items: center;

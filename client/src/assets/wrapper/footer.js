@@ -1,42 +1,30 @@
 import styled from 'styled-components'
 
-const Wrapper = styled.div`
-  border: 2px solid hotpink;
-  width: min(95%, 1400px);
-  margin-inline: auto;
-  .links {
+const Wrapper = styled.footer`
+  /* position: absolute; */
+  bottom: 1em;
+  .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin: 1em 0 1em 1em; */
-    .footer-links {
-      margin: 0.5em;
+    align-items: flex-start;
 
-      a {
-        margin: 1em;
-        font-weight: 700;
-        font-size: 01em;
-
-        :hover {
+    font-size: var(--fs-200);
+    p {
+      display: flex;
+      align-items: center;
+    }
+    .secandery-list {
+      ul {
+        display: flex;
+        align-items: center;
+        li a {
+          color: var(--clr-neutral-100);
           text-decoration: underline;
-        }
-
-        :last-child {
-          color: var(--color-3);
+          margin: 0 0.5em;
+          :hover {
+            text-decoration: none;
+          }
         }
       }
-    }
-  }
-  p {
-    text-align: center;
-    font-size: 1em;
-  }
-  @media screen and (max-width: 521px) {
-    .links {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
     }
   }
 `

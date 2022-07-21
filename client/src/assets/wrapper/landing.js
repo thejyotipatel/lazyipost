@@ -23,7 +23,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  footer {
+  /* footer {
     position: absolute;
     bottom: 1em;
     .container {
@@ -50,6 +50,6 @@ const Wrapper = styled.div`
         }
       }
     }
-  }
+  } */
 `
 export default Wrapper
