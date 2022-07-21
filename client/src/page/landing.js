@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import Wrapper from '../assets/wrapper/landing'
-import { BiCopyright, BiMenuAltLeft } from 'react-icons/bi'
+import { BiCopyright } from 'react-icons/bi'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import { VscClose } from 'react-icons/vsc'
 import { Logo, BigHeader, MobileMenu, SmallHeader } from '../components'
@@ -40,7 +39,7 @@ const Landing = () => {
       <main>
         <div className='container'>
           <div className='col'>
-            <p>Post your Image,s on Instagram from here.</p>
+            <p>Post your Image's on Instagram from here.</p>
             <button className='button login-btn'>Login with Instagram</button>
           </div>
         </div>
@@ -51,7 +50,7 @@ const Landing = () => {
             <span>
               <BiCopyright />
             </span>
-            Copyright 2022
+            Copyright 2022.
           </p>
           <nav className='secandery-list'>
             <ul role='list'>

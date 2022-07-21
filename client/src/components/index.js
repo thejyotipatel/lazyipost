@@ -12,11 +12,10 @@ const Logo = () => {
   )
 }
 const Wrapper = styled.a`
-  /* font-weight: 500; */
-  /* font-size: 8em; */
-  /* margin: 1em 1em 1em 0; */
-  width: 200px;
+  margin-left: -1.5em;
+  max-width: 200px;
   img {
+    width: 100%;
     display: block;
   }
 `

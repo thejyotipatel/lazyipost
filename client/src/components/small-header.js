@@ -1,30 +1,22 @@
-import link from './links'
-import { Logo } from './index'
-import { FaWindowClose } from 'react-icons/fa'
 import Wrapper from '../assets/wrapper/small-header'
 
 const SmallHeader = () => {
   return (
     <Wrapper>
-      {/* <button>
-        <span>
-          <FaWindowClose />
-        </span>
-      </button> */}
       <div className='menu-links'>
         <ul role='list'>
           <li>
-            <a href='#' className='primery-link'>
+            <a href='#' className=' '>
               Github
             </a>
           </li>
           <li>
-            <a href='#' className='primery-link'>
+            <a href='#' className=' '>
               about
             </a>
           </li>
           <li>
-            <a href='#' className='primery-link byemecoffee'>
+            <a href='#' className='  byemecoffee'>
               Bye me Coffee
             </a>
           </li>
